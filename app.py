@@ -59,3 +59,5 @@ div_element = driver.find_element(By.CSS_SELECTOR, ".VrBPSncUavA1d7C9kAc5")
 
 with open('reponse.txt', 'w', encoding='utf-8') as fichier:
     fichier.write(div_element.text)
+
+driver.quit()
