@@ -57,7 +57,7 @@ time.sleep(7)
 
 div_element = driver.find_element(By.CSS_SELECTOR, ".VrBPSncUavA1d7C9kAc5")
 
-text = div_element.text
-
 with open('reponse.txt', 'w', encoding='utf-8') as fichier:
-    fichier.write(text)
+    fichier.write(div_element.text)
+
+driver.quit()
